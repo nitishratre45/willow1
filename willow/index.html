@@ -391,372 +391,8 @@ video.mode-cover{object-fit:cover}
   .filter-btn{padding:8px 16px;font-size:12px}
   .card-info{padding:14px}
 }
-
-/* ===== CRICZONE PREMIUM UI ===== */
-:root{
-  --cz-accent:#00a8ff;
-  --cz-accent2:#7c3aed;
-  --cz-card:rgba(18,14,28,.82);
-  --cz-border:rgba(255,255,255,.09);
-}
-body{
-  background:
-    radial-gradient(circle at 15% 0%,rgba(0,168,255,.14),transparent 34%),
-    radial-gradient(circle at 90% 15%,rgba(124,58,237,.14),transparent 35%),
-    radial-gradient(circle at 50% 100%,rgba(0,168,255,.06),transparent 40%),
-    #070912;
-}
-#channel-list{max-width:760px;margin:0 auto;}
-.hero-box{
-  padding:32px 16px 18px;
-  position:relative;
-}
-.hero-box::before{
-  content:"";
-  position:absolute;inset:0 8% auto;
-  height:180px;
-  background:radial-gradient(ellipse,rgba(0,168,255,.12),transparent 68%);
-  pointer-events:none;
-}
-.brand-pill{
-  position:relative;
-  border-color:rgba(0,168,255,.16);
-  background:rgba(255,255,255,.035);
-}
-.brand-icon{
-  background:linear-gradient(135deg,#00a8ff,#7c3aed);
-  box-shadow:0 6px 22px rgba(0,168,255,.3);
-}
-.header h1{
-  background:linear-gradient(135deg,#fff 20%,#38bdf8 58%,#8b5cf6 100%);
-  filter:drop-shadow(0 5px 24px rgba(0,168,255,.2));
-}
-.header p{max-width:430px}
-.stats-row{
-  padding:12px 8px;
-  max-width:440px;
-  border:1px solid rgba(255,255,255,.055);
-  border-radius:20px;
-  background:rgba(255,255,255,.025);
-  backdrop-filter:blur(14px);
-}
-.stat-val{
-  background:linear-gradient(135deg,#fff,#7dd3fc);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-.tg-btn{
-  max-width:360px;
-  background:linear-gradient(135deg,#0088cc,#00b7ff);
-  box-shadow:0 10px 30px rgba(0,136,204,.28);
-}
-.tg-btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,136,204,.38)}
-.filters{
-  position:sticky;top:0;z-index:20;
-  padding:10px 16px 16px;
-  background:linear-gradient(to bottom,rgba(7,9,18,.96),rgba(7,9,18,.82),transparent);
-  backdrop-filter:blur(12px);
-}
-.filter-btn{
-  border-color:rgba(255,255,255,.08);
-  background:rgba(255,255,255,.035);
-}
-.filter-btn.active{
-  background:linear-gradient(135deg,#009fe3,#7c3aed);
-  box-shadow:0 7px 24px rgba(0,168,255,.24);
-}
-#ch-cards{max-width:620px;gap:16px}
-.match-card{
-  border-color:rgba(255,255,255,.075);
-  background:linear-gradient(160deg,rgba(23,18,34,.94),rgba(9,10,18,.97));
-  box-shadow:0 18px 50px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.045);
-}
-.match-card:hover{
-  transform:translateY(-2px);
-  border-color:rgba(0,168,255,.3);
-  box-shadow:0 22px 60px rgba(0,0,0,.62),0 0 0 1px rgba(0,168,255,.05);
-}
-.card-poster img{transition:transform .45s ease,filter .45s ease}
-.match-card:hover .card-poster img{transform:scale(1.025);filter:saturate(1.08)}
-.card-poster::after{
-  background:linear-gradient(to bottom,transparent 42%,rgba(9,10,18,.98) 100%);
-}
-.ribbon.live{
-  background:linear-gradient(135deg,#ef4444,#f97316);
-}
-.ribbon.upcoming{
-  background:linear-gradient(135deg,#151827,#25213a);
-}
-.card-subtitle{
-  color:#38bdf8;
-}
-.streams-section{border-top-color:rgba(255,255,255,.08)}
-.stream-btn{
-  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
-  border-color:rgba(255,255,255,.09);
-}
-.stream-btn:hover{
-  border-color:rgba(0,168,255,.45);
-  color:#7dd3fc;
-  background:rgba(0,168,255,.07);
-}
-.stream-btn[data-server="1"]{border-left:2px solid #38bdf8}
-.stream-btn[data-server="3"]{border-left:2px solid #a78bfa}
-.stream-btn[data-server="7"]{border-left:2px solid #22d3ee}
-.upcoming-btn{
-  background:linear-gradient(135deg,rgba(0,168,255,.08),rgba(124,58,237,.08));
-  border-color:rgba(0,168,255,.22);
-  color:#7dd3fc;
-}
-.popup-card{
-  border-color:rgba(0,168,255,.18);
-  background:linear-gradient(165deg,#151b2a 0%,#0b0e17 100%);
-}
-.popup-icon{
-  background:linear-gradient(135deg,#0088cc,#7c3aed);
-  box-shadow:0 10px 28px rgba(0,168,255,.28);
-}
-.popup-tg-btn{
-  background:linear-gradient(135deg,#0088cc,#00b7ff);
-}
-@media(min-width:700px){
-  .hero-box{padding-top:42px}
-  .header h1{font-size:36px}
-  .header p{font-size:14px}
-}
-
-
-/* =========================================================
-   CRICZONE — DESKTOP / LAPTOP UI
-   ========================================================= */
-html,body{min-width:320px}
-body{
-  background:
-    radial-gradient(900px 500px at 15% -5%,rgba(0,168,255,.13),transparent 65%),
-    radial-gradient(800px 500px at 95% 5%,rgba(124,58,237,.12),transparent 65%),
-    linear-gradient(180deg,#060811 0%,#080a12 48%,#05060b 100%);
-}
-
-/* desktop shell */
-#channel-list{
-  width:100%;
-  max-width:none;
-  min-height:100vh;
-  padding-bottom:70px;
-}
-.hero-box{
-  width:min(1180px,calc(100% - 48px));
-  margin:0 auto;
-  padding:42px 0 24px;
-  align-items:stretch;
-  text-align:left;
-}
-.hero-box::before{
-  left:-15%;
-  right:auto;
-  width:700px;
-  height:260px;
-  opacity:.7;
-}
-.brand-pill{
-  width:max-content;
-  margin-bottom:20px;
-}
-.header h1{
-  font-size:46px;
-  line-height:1.05;
-  letter-spacing:-1.5px;
-  max-width:800px;
-}
-.header p{
-  margin:12px 0 26px;
-  max-width:620px;
-  font-size:15px;
-}
-.stats-row{
-  justify-content:flex-start;
-  width:max-content;
-  max-width:none;
-  gap:0;
-  margin:0 0 24px;
-  padding:10px 18px;
-}
-.stat-item{
-  min-width:125px;
-  flex:none;
-}
-.stat-val{font-size:24px}
-.tg-btn{
-  margin:0;
-  max-width:260px;
-  width:auto;
-  padding:13px 24px;
-}
-
-/* desktop filter/navigation bar */
-.filters{
-  position:sticky;
-  top:0;
-  z-index:50;
-  width:100%;
-  padding:13px max(24px,calc((100% - 1180px)/2)) 14px;
-  justify-content:flex-start;
-  gap:10px;
-  background:rgba(5,7,14,.82);
-  border-top:1px solid rgba(255,255,255,.04);
-  border-bottom:1px solid rgba(255,255,255,.07);
-  box-shadow:0 10px 35px rgba(0,0,0,.22);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
-}
-.filter-btn{
-  padding:10px 19px;
-  border-radius:12px;
-}
-
-/* responsive desktop grid */
-#ch-cards{
-  width:min(1180px,calc(100% - 48px));
-  max-width:none;
-  margin:0 auto;
-  padding:28px 0 0;
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  align-items:start;
-  gap:22px;
-}
-.match-card{
-  min-width:0;
-  border-radius:18px;
-  transition:transform .22s ease,border-color .25s ease,box-shadow .25s ease;
-}
-.match-card:hover{
-  transform:translateY(-5px);
-}
-.card-poster img{
-  aspect-ratio:16/9;
-}
-.card-info{
-  padding:17px;
-  gap:11px;
-  margin-top:-28px;
-}
-.card-title{
-  font-size:16px;
-  min-height:45px;
-}
-.card-subtitle{font-size:12px}
-.card-meta{font-size:11px}
-.stream-btn{
-  min-width:0;
-  padding:11px 8px;
-}
-
-/* empty state */
-#ch-cards>div[style*="NO EVENTS"]{
-  grid-column:1/-1;
-  min-height:220px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px dashed rgba(255,255,255,.1);
-  border-radius:20px;
-  background:rgba(255,255,255,.018);
-}
-
-/* player */
-#pc{
-  background:#020308;
-}
-#status{
-  top:18px;
-  right:20px;
-}
-
-/* popup desktop */
-.popup-card{
-  max-width:430px;
-  padding:36px 32px 30px;
-  border-radius:26px;
-}
-
-/* wide screens */
-@media(min-width:1280px){
-  .hero-box{
-    padding-top:50px;
-    padding-bottom:30px;
-  }
-  .header h1{font-size:52px}
-  #ch-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-}
-
-/* 2-column laptop */
-@media(min-width:769px) and (max-width:1050px){
-  .hero-box{
-    width:min(900px,calc(100% - 40px));
-  }
-  #ch-cards{
-    width:min(900px,calc(100% - 40px));
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-  .header h1{font-size:40px}
-}
-
-/* tablet */
-@media(min-width:601px) and (max-width:768px){
-  .hero-box{
-    width:calc(100% - 36px);
-    padding-top:34px;
-  }
-  #ch-cards{
-    width:calc(100% - 36px);
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:16px;
-  }
-  .header h1{font-size:34px}
-  .stats-row{width:100%}
-}
-
-/* phone keeps original single-column experience */
-@media(max-width:600px){
-  .hero-box{
-    width:100%;
-    text-align:center;
-    align-items:center;
-    padding:28px 16px 18px;
-  }
-  .header h1{font-size:28px}
-  .header p{margin-left:auto;margin-right:auto}
-  .stats-row{width:100%;justify-content:center}
-  .tg-btn{width:100%;max-width:360px;margin-bottom:0}
-  .filters{
-    padding-left:16px;
-    padding-right:16px;
-    justify-content:center;
-  }
-  #ch-cards{
-    width:100%;
-    padding:0 16px 20px;
-    grid-template-columns:1fr;
-    gap:16px;
-  }
-}
-
-/* scrollbar */
-::-webkit-scrollbar{width:8px;height:8px}
-::-webkit-scrollbar-track{background:#06070c}
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(#168bd0,#6842b7);
-  border-radius:20px;
-}
-::-webkit-scrollbar-thumb:hover{background:#38bdf8}
-
-/* subtle selection */
-::selection{background:rgba(0,168,255,.25);color:#fff}
-
 </style>
-<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><title>CricZone Live — Live Cricket</title>
-</head>
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style></head>
 <body>
 <div id="overlay">
   <div class="popup-card">
@@ -764,12 +400,11 @@ body{
     <div class="popup-icon">
       <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
     </div>
-    <div class="popup-title">Join the CricZone Community</div>
-    <div class="popup-desc">Get live match updates, schedules and CricZone alerts directly on Telegram.</div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:7px;margin:-10px 0 18px;color:#6ee7b7;font-size:11px;font-weight:700;"><span style="width:7px;height:7px;border-radius:50%;background:#22d3a0;box-shadow:0 0 10px rgba(34,211,160,.7);"></span> Fast updates • CricZone Community</div>
-    <a class="popup-tg-btn" href="https://t.me/+5hrS9VoLS8tjOTM1" target="_blank" rel="noopener noreferrer">
+    <div class="popup-title">Join Our Community</div>
+    <div class="popup-desc">Get instant updates for live matches, streams, and schedules directly on Telegram.</div>
+    <a class="popup-tg-btn" href="https://t.me/" target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.59-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.13-.04.25z"></path></svg>
-      Join Telegram
+      Join Now
     </a>
   </div>
 </div>
@@ -779,11 +414,11 @@ body{
       <div class="brand-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
       </div>
-      <div class="brand-text">CricZone</div>
+      <div class="brand-text">CricXCrate</div>
     </div>
     <div class="header">
-      <h1>CricZone Live</h1>
-      <p>Your home for live cricket • Fast updates • Clean experience • Mobile first.</p>
+      <h1>Willow by CricXCrate</h1>
+      <p>Your home for live cricket matches — free streaming, premium quality, zero hassle.</p>
     </div>
     <div class="stats-row">
       <div class="stat-item">
@@ -801,9 +436,9 @@ body{
         <div class="stat-lbl">Quality</div>
       </div>
     </div>
-    <a class="tg-btn" href="https://t.me/+5hrS9VoLS8tjOTM1" target="_blank" rel="noopener noreferrer">
+    <a class="tg-btn" href="https://t.me/" target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.59-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.13-.04.25z"></path></svg>
-      Join CricZone Telegram
+      Join Our Telegram
     </a>
   </div>
   <div class="filters" id="filters">
@@ -822,12 +457,6 @@ body{
   </div>
   <div id="ch-cards"></div>
 </div>
-
-<div class="cz-footer" style="width:min(1180px,calc(100% - 48px));margin:42px auto 0;padding:18px 0;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;gap:16px;align-items:center;color:#686b7c;font-size:11px;font-weight:600;">
-  <span style="letter-spacing:.5px;">CRICZONE LIVE • CRICKET STREAMING HUB</span>
-  <span style="display:flex;align-items:center;gap:7px;"><i style="width:7px;height:7px;border-radius:50%;background:#22d3a0;box-shadow:0 0 9px rgba(34,211,160,.7);display:inline-block;"></i> System Online</span>
-</div>
-
 <div id="pc">
   <video id="v" playsinline="" webkit-playsinline="" preload="none" x5-video-player-type="h5" x5-video-player-fullscreen="true"></video>
   <div id="video-loading"><div class="video-spinner"></div></div>
@@ -1350,7 +979,7 @@ function main(){
       return;
     }
 
-    document.title = "CricZone \u2014 " + id;
+    document.title = "CricXCrate \u2014 " + id;
     startPlayer(ch, info.srv);
   }).catch(function(e){
     toast("Connection Error \u2014 Refresh to retry", "err", 0);
